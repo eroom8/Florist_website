@@ -1,0 +1,290 @@
+ /* Reset */
+ *{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main Styling */
+html  body{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ line-height: 1,7em;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+h1,h2,h3 {
+    padding-bottom:20px;
+}
+
+p{
+    margin:5px 0;
+}
+
+/* Utility Classes */
+.container{
+    margin:auto;
+    max-width: 1100px;
+    overflow:auto;
+    padding:0 20px;
+}
+
+.text-primary{
+    color:#3ceb67;
+}
+
+.lead{
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    font-size:18px;
+    color:#fff;
+    background:#333;
+    padding:13px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#50e068;
+    color:#275f0f;
+}
+.btn-light {
+    background: #f4f4f4;
+    color: #275f0f;
+  }
+  
+  .bg-dark {
+    background: #3d5035;
+    color: #fff;
+  }
+  
+  .bg-light {
+    background: #f4f4f4;
+    color: #275f0f;
+  }
+  
+  .bg-primary {
+    background: #3d5035;
+    color: #f1f3db;
+  }
+  .clr{
+      clear:both;
+  }
+  .l-heading{
+      font-size:40px;
+  }
+ 
+  /* Padding */
+  .py-1{padding:10px 0 ;}
+  .py-2{padding:20px 0 ;}
+  .py-3{padding:30px 0 ;}
+
+/* Navbar */
+#navbar{
+    background:#05611c;
+    color:#fff;
+    overflow:auto;
+}
+
+#navbar a{
+    color:#fff
+}
+
+#navbar h1{
+    float:left;
+    padding-top:20px;
+}
+
+#navbar ul{
+    list-style:none;
+    float:right;
+}
+
+#navbar ul li {
+ float:left;
+}
+
+#navbar ul li a{
+    display:block;
+    padding:20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+ #navbar ul li a.current{
+    background:#346649;
+    color:#9dbbaa;
+}
+
+/* showcase */
+
+
+#showcase .showcase-content{
+    color:#82df44;
+    text-align:center;
+    padding-top:50px;
+}
+
+#showcase .showcase-content h1{
+    font-size:75px;
+    line-height:1.2em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom:20px;
+    line-height: 1.7em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Create a changing background image animation */
+
+#home-info {
+    height: 400px;
+    display: flex;
+  justify-content: center; 
+  }
+  
+  #home-info .info-content {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the content */
+    padding: 50px 30px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  .imgDiv {
+    width: 100%;
+    height: 400px;
+    position: relative; /* Add this to position the pseudo-elements */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  /* Define the keyframes for the background animation */
+  @keyframes animatedBackground {
+    0% {
+      background-image: url('https://drive.google.com/uc?export=view&id=140iCanSO425Aap-eBfnLPxDhxZo9qXxP');
+    }
+    50% {
+      background-image: url('https://drive.google.com/uc?export=view&id=1Y4IqQ8tlsN2MWUe32ZvXyakzmSSKazBC');
+    }
+    100% {
+      background-image: url('https://drive.google.com/uc?export=view&id=1CMY7LIBH_pDw3qm-FZ3onaCByBM2F1FN');
+    }
+  }
+  
+  /* Apply the animation to .imgDiv */
+  .imgDiv::before {
+    content: ''; /* Pseudo-element to create the animated background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: animatedBackground 10s infinite; /* 10s duration, infinitely repeating */
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+  #home-info .info-content p {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+/* Features */
+.box{
+    float:left;
+    widows: 33.5%;
+    padding:60px;
+    text-align:center;
+}
+
+.box i{
+    margin-bottom:10px;
+}
+
+/* About Info */
+#about-info .info-right{
+    float:right;
+    width:50%;
+    min-height:100%;
+}
+#about-info .info-left{
+    float:left;
+    width:50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    display:block;
+    margin:auto;
+    width:70%;
+    border-radius:50%;
+}
+#testimonials{
+    height:600px;
+    padding-top:100px;
+}
+
+#testimonials .testimonial img{
+    width:100px;
+    float:left;
+    margin-right:40px;
+    border-radius:50%;
+}
+
+#testimonials  h2{
+    color:#fff;
+    text-align:center;
+    padding-bottom:55px;
+}
+
+#testimonials .testimonial{
+    padding:20px;
+    margin-bottom:40px;
+    border-radius:5px;
+    opacity: 0.85;
+}
+#contact-form .form-group{
+    mairgin-bottom:20px;
+}
+#contact-form label{
+    display:block;
+    margin-bottom:5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width:100%;
+    padding:10px;
+    border:1px #ddd slod;
+}
+
+#contact-form textarea{
+    height:200px;
+}
+#contact-form input:focus, #contact-form textarea:focus {
+    outline:none;
+    border-color:#215813
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around; /* Horizontal alignment */
+  }
+  
+  .contact-box {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    margin: 10px; /* Optional, for visual separation */
+  }
+  
